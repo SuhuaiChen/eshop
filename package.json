@@ -1,0 +1,20 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "eCommerce application built with the MERN stack",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuhuaiChen/eshop.git"
+  },
+  "author": "Suhuai Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SuhuaiChen/eshop/issues"
+  },
+  "homepage": "https://github.com/SuhuaiChen/eshop#readme"
+}
