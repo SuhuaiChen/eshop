@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 
-const reviewSchemma = mongoose.Schema(
+const reviewSchema = mongoose.Schema(
     {
         user: {
             type: mongoose.Schema.Types.ObjectId,
