@@ -10,9 +10,6 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder.js",
-    "data:destroy": "node backend/seeder.js -d",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d"
   },
   "repository": {
@@ -31,7 +28,8 @@
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.6.3"
+    "mongoose": "^7.6.3",
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
