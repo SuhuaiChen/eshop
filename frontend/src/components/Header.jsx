@@ -31,12 +31,12 @@ const Header = () => {
     }
   return (
     <header>
-        <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+        <Navbar bg='dark' variant="dark" expand='lg' collapseOnSelect>
             <Container>
                 <LinkContainer to='/'>
                     <Navbar.Brand>
-                        <img src={logo} alt='Eshop'/>
-                        Eshop
+                        <img src={logo} alt='Eshop' width={60}/>
+                        Lay's Global Eshop - people cannot live without Lay's chips!
                     </Navbar.Brand>
                 </LinkContainer>
 

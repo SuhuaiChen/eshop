@@ -70,11 +70,16 @@ const ProductScreen = () => {
                 <ListGroupItem>
                     <h3>{product.name}</h3>
                 </ListGroupItem>
+                <ListGroupItem style={{color: 'black'}}>
+                    <h5>Country of origin: {product.brand}</h5>
+                </ListGroupItem>
                 <ListGroupItem>
                     <Rating value={product.rating} 
                     text={`${product.numReviews} reviews`}/>
                 </ListGroupItem>
-                <ListGroupItem>Price: ${product.price}</ListGroupItem>
+                <ListGroupItem className='mt-10'>
+                    <h5>Price: ${product.price}</h5>
+                </ListGroupItem>
             </ListGroup>
         </Col>
 

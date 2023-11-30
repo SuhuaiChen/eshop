@@ -1,20 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Carousel, Image } from 'react-bootstrap'
-import Loader from './Loader'
-import Message from './Message'
-import { useGetTopProductsQuery } from '../slices/productsApiSlice'
 
-const ProductCarousel = () => {
-    const {data: products, isLoading, error} = useGetTopProductsQuery()
+const ProductCarousel = ({products}) => {
+    
   return (
-    isLoading ? <Loader/> : error ? <Message variant="danger">{error}</Message>
-    :(
-        <Carousel pause='hover' className='bg-primary mb-4'>
+        <Carousel pause='hover' className='bg-primary mb-4' style={{width:"600px", height:"500px"}}>
             {products.map(product=>(
                 <Carousel.Item key={product._id}>
                     <Link to={`/product/${product._id}`}>
-                        <Image src={product.image} alt={product.name} height={500} width={600}/>
+                        <Image src={product.image} alt={product.name} style={{width:"600px", height:"500px"}}/>
                         <Carousel.Caption className='carousel-caption'>
                             <h2>{product.name} (${product.price})</h2>
                         </Carousel.Caption>
@@ -23,7 +18,6 @@ const ProductCarousel = () => {
                 
             ))}
         </Carousel>
-    )
   )
 }
 
